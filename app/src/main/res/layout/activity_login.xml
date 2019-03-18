@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/sign_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tool_login"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:textSize="25sp"/>
+    </android.support.v7.widget.Toolbar>
+    </android.support.design.widget.AppBarLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/ic_profile_img"/>
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_Name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textColor="#000"
+            android:background="@drawable/ic_rectanglebox"
+            android:hint="@string/edt_Name"
+            android:textAlignment="center"
+            android:layout_margin="20dp"
+            android:textSize="25sp"
+            android:inputType="textCapWords"
+            android:maxLength="20"
+            android:nextFocusDown="@+id/edt_Pwd"  />
+
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/edt_Pwd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#000"
+            android:background="@drawable/ic_rectanglebox"
+            android:hint="@string/edt_Pwd"
+            android:textAlignment="center"
+            android:layout_margin="20dp"
+            android:textSize="25sp"
+            android:inputType="textPassword"
+            android:maxLength="10"
+            />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:minWidth="52dp"
+            android:textSize="25sp"
+            android:paddingStart="52dp"
+            android:paddingEnd="52dp"
+            android:background="@drawable/ic_btn_rectanglebox"
+            android:layout_gravity="center"
+            android:text="@string/btn_login"
+            />
+
+    </LinearLayout>
+
+    </android.support.v7.widget.LinearLayoutCompat>

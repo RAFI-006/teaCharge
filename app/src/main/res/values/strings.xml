@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">TeaCharge</string>
+    <!--SignUp-->
+    <string name="tool_login">LOGIN</string>
+    <string name="edt_Name">UserName</string>
+    <string name="edt_Pwd">Password</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="contentdesc">null</string>
 </resources>
