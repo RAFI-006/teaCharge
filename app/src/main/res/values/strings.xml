@@ -6,4 +6,5 @@
     <string name="edt_Pwd">Password</string>
     <string name="btn_login">LOGIN</string>
     <string name="contentdesc">null</string>
+    <string name="textrs">₹ 0.00</string>
 </resources>

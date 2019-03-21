@@ -1,0 +1,3195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+   >
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/idcardview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#6495ED"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            >
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+            >
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/textrs"
+                android:textSize="25sp"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:layout_weight="2"
+                />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+               android:layout_gravity="center"
+              >
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#FF0000"
+                    android:gravity="center"
+                    android:layout_weight="4"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                       android:layout_marginTop="5dp"
+                        android:src="@drawable/ic_clear_img"
+                        android:layout_weight="2"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="clear"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        android:textColor="#fff"
+
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#008000"
+                    android:gravity="center"
+                    android:layout_weight="4"
+                    >
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/ic_print_img"
+                        android:layout_weight="2"
+                        />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="print"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:layout_weight="2"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="#FFA500"
+                    android:layout_weight="4"
+                 android:gravity="center"
+                    >
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_historyimg"
+                        android:layout_weight="2"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:text="history"
+                        android:textAlignment="center"
+                        android:layout_weight="2"
+                        android:textColor="#fff"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/idcardview1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:id="@+id/idlistview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+                    <RelativeLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="80dp"
+                        android:layout_height="1300dp"
+                        android:background="@color/colorPrimaryDark"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/textparcel"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:text="Parcel"
+                            android:gravity="center"
+                            android:textColor="#fff"
+
+                            android:layout_marginTop="20dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/biscuits"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:text="Biscuits"
+                            android:gravity="center"
+                            android:layout_below="@+id/textparcel"
+                            android:textColor="#fff"
+
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/breadbun"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:text="BreadBun"
+                            android:gravity="center"
+                            android:layout_below="@+id/biscuits"
+                            android:textColor="#fff"
+
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/cakes"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:text="Cakes"
+                            android:gravity="center"
+                            android:layout_below="@+id/breadbun"
+                            android:textColor="#fff"
+
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textdilkhush"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:gravity="center"
+                            android:layout_below="@+id/cakes"
+                            android:textColor="#fff"
+                            android:text="DilKhush"
+
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/textdilpasand"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:gravity="center"
+                            android:layout_below="@+id/textdilkhush"
+                            android:text="DilPasand"
+                            android:textColor="#fff"
+
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textmixture"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:gravity="center"
+                            android:text="Mixture"
+                            android:layout_below="@+id/textdilpasand"
+                            android:textColor="#fff"
+
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/textpuffs"
+                            android:layout_width="100dp"
+                            android:layout_height="70dp"
+                            android:gravity="center"
+                            android:textColor="#fff"
+                            android:text="puffs"
+                            android:layout_below="@+id/textmixture"
+
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+</android.support.v4.widget.NestedScrollView>
+                </android.support.v7.widget.LinearLayoutCompat>
+                <android.support.v4.widget.NestedScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fillViewport="true"
+                    >
+                <android.support.v7.widget.LinearLayoutCompat
+                    android:id="@+id/gridview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.GridLayout
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            app:columnCount="4"
+                            app:rowCount="4">
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                app:layout_column="0"
+                                app:layout_row="0">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp">
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                 />
+
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="90dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis3" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                 />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis4" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="badam pista biscuts"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+
+                                               />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                             />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                       />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+                        </android.support.v7.widget.GridLayout>
+                    </HorizontalScrollView>
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis3" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="cakes"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis4" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="badam pista biscuits"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                             />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                               />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+                        </android.support.v7.widget.GridLayout>
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:columnCount="4"
+                            app:rowCount="4">
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                             />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                               />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                              />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+                        </android.support.v7.widget.GridLayout>
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:columnCount="4"
+                            app:rowCount="4">
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                           />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                             />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                         />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                        />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+                        </android.support.v7.widget.GridLayout>
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:columnCount="4"
+                            app:rowCount="4">
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp"
+                                app:layout_column="0"
+                                app:layout_row="0">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                           />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                            />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                              />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                       />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                              />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                           />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+                        </android.support.v7.widget.GridLayout>
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:columnCount="4"
+                            app:rowCount="4">
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+                        </android.support.v7.widget.GridLayout>
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:columnCount="4"
+                            app:rowCount="4">
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+                        </android.support.v7.widget.GridLayout>
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:columnCount="4"
+                            app:rowCount="4">
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+                        </android.support.v7.widget.GridLayout>
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:columnCount="4"
+                            app:rowCount="4">
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+                        </android.support.v7.widget.GridLayout>
+                    </HorizontalScrollView>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <android.support.v7.widget.GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:columnCount="4"
+                            app:rowCount="4">
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="40dp"
+                                    android:minHeight="40dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="40dp"
+                                        android:minHeight="40dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+
+                            <android.support.v7.widget.LinearLayoutCompat
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="5dp">
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis1" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlmondBis"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="5dp"
+                                    android:background="@drawable/ic_rectanglebox_gridview"
+                                    android:minWidth="50dp"
+                                    android:minHeight="50dp"
+                                    android:orientation="vertical"
+                                    android:weightSum="6"
+                                    android:layout_marginLeft="5dp">
+
+                                    <android.support.v7.widget.CardView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="3"
+                                        android:minWidth="50dp"
+                                        android:minHeight="50dp"
+                                        app:cardCornerRadius="3.3dp"
+
+                                        >
+
+                                        <android.support.v7.widget.LinearLayoutCompat
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:orientation="vertical">
+
+                                            <android.support.v7.widget.AppCompatImageView
+                                                android:layout_width="91dp"
+                                                android:layout_height="91dp"
+                                                android:layout_gravity="center"
+                                                android:scaleType="fitXY"
+                                                android:src="@drawable/ic_bis2" />
+
+                                            <android.support.v7.widget.AppCompatTextView
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:text="AlooBun"
+                                                android:textAlignment="center"
+                                                android:textColor="#000"
+                                                />
+                                        </android.support.v7.widget.LinearLayoutCompat>
+                                    </android.support.v7.widget.CardView>
+                                </LinearLayout>
+
+                            </android.support.v7.widget.LinearLayoutCompat>
+                        </android.support.v7.widget.GridLayout>
+                    </HorizontalScrollView>
+
+                </android.support.v7.widget.LinearLayoutCompat>
+                </android.support.v4.widget.NestedScrollView>
+            </android.support.v7.widget.LinearLayoutCompat>
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.constraint.ConstraintLayout>
