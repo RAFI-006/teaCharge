@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.LinearLayoutCompat
+<androidx.appcompat.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
     android:orientation="vertical"
-    android:background="@drawable/imgcofffe"
+    android:background="@color/signInBackgroundColor"
     >
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,37 +15,37 @@
         android:gravity="center"
        >
 
-        <android.support.v7.widget.AppCompatImageView
-            android:layout_width="90dp"
-            android:layout_height="90dp"
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
             android:src="@drawable/ic_login_primg"
             />
 
-        <android.support.v7.widget.AppCompatEditText
-            android:id="@+id/edt_Name"
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:background="@drawable/ic_rectanglebox"
             android:hint="@string/edt_Name"
             android:textAlignment="center"
             android:layout_margin="20dp"
-            android:textColorHint="#000"
+            android:textColorHint="#fff"
             android:textSize="20sp"
            android:textStyle="bold"
             android:inputType="textCapWords"
             android:maxLength="20"
-            android:nextFocusDown="@+id/edt_Pwd"  />
+            android:nextFocusDown="@+id/password"  />
 
-        <android.support.v7.widget.AppCompatEditText
-            android:id="@+id/edt_Pwd"
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="#000"
+            android:textColor="#fff"
             android:textStyle="bold"
-            android:textColorHint="#000"
+            android:textColorHint="#fff"
             android:background="@drawable/ic_rectanglebox"
             android:hint="@string/edt_Pwd"
             android:textAlignment="center"
@@ -55,7 +56,7 @@
 
             />
 
-        <android.support.v7.widget.AppCompatButton
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btn_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -74,4 +75,4 @@
 
     </LinearLayout>
 
-    </android.support.v7.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>

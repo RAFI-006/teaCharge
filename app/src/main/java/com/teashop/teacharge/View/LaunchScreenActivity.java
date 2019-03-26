@@ -1,9 +1,12 @@
-package com.teashop.teacharge;
+package com.teashop.teacharge.View;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
+
+import com.teashop.teacharge.R;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class LaunchScreenActivity extends AppCompatActivity {
     private Handler handler = new Handler();
