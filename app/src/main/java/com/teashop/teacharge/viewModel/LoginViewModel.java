@@ -1,4 +1,4 @@
-package com.teashop.teacharge.ViewModel;
+package com.teashop.teacharge.viewModel;
 
 import android.util.Log;
 

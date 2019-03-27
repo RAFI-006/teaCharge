@@ -6,6 +6,8 @@ buildscript {
         google()
         jcenter()
     }
+
+
     dependencies {
         classpath 'com.android.tools.build:gradle:3.2.1'
         
@@ -20,6 +22,19 @@ allprojects {
         google()
         jcenter()
     }
+
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile) {
+            options.compilerArgs << "-Xmaxerrs" << "4000"
+            options.compilerArgs << "-Xmaxwarns" << "4000"
+        }
+    }
+    ext {
+
+        dagger_version = '2.17'
+
+    }
+
 }
 
 task clean(type: Delete) {

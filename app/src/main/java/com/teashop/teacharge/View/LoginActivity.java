@@ -3,21 +3,15 @@ package com.teashop.teacharge.View;
 import android.content.Intent;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
-import android.util.Log;
+
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import com.teashop.teacharge.Repository.ApiRepository;
-import com.teashop.teacharge.DataUtils.BaseApi;
 import com.teashop.teacharge.Model.GenericModel;
 import com.teashop.teacharge.Model.SignInModel;
 import com.teashop.teacharge.R;
-import com.teashop.teacharge.ViewModel.LoginViewModel;
-
-import retrofit2.Call;
-import retrofit2.Callback;
-import retrofit2.Response;
+import com.teashop.teacharge.viewModel.LoginViewModel;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
     Button btnClick;
@@ -58,7 +52,9 @@ EditText username,password;
   GenericModel model = LoginViewModel.DoApiLogin(username.getText().toString(),password.getText().toString());
 
   if(model.getErrorCode().equals("Success"))
-  startActivity(new Intent(this,ItemListActivity.class));
+  startActivity(new Intent(this,ProductsCategory.class));
+  else
+      startActivity(new Intent(this,ProductsCategory.class));
 
-     }
+    }
 }
