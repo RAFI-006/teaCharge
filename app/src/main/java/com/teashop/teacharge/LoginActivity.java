@@ -16,7 +16,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         btnClick.setOnClickListener(this);
     }
 
-
     @Override
     public void onClick(View v) {
         Intent intent = new Intent(LoginActivity.this,ItemListActivity.class);

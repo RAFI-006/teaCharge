@@ -4,21 +4,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/imgcofffe"
+    android:background="#DAA520"
     >
     <LinearLayout
+        android:id="@+id/top_LinearLay"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="@dimen/top_LinearLay_marTop"
         android:gravity="center"
        >
 
         <android.support.v7.widget.AppCompatImageView
-            android:layout_width="90dp"
-            android:layout_height="90dp"
+            android:id="@+id/imgTea"
+            android:layout_width="@dimen/imgTea_layWidth"
+            android:layout_height="@dimen/imgTea_layHeight"
             android:layout_gravity="center"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="@dimen/imgTea_marTop"
             android:src="@drawable/ic_login_primg"
             />
 
@@ -30,7 +32,7 @@
             android:background="@drawable/ic_rectanglebox"
             android:hint="@string/edt_Name"
             android:textAlignment="center"
-            android:layout_margin="20dp"
+            android:layout_margin="@dimen/edt_Name_layMargin"
             android:textColorHint="#000"
             android:textSize="20sp"
            android:textStyle="bold"
@@ -48,7 +50,7 @@
             android:background="@drawable/ic_rectanglebox"
             android:hint="@string/edt_Pwd"
             android:textAlignment="center"
-            android:layout_margin="20dp"
+            android:layout_margin="@dimen/edt_Pwd_layMargin"
             android:textSize="20sp"
             android:inputType="textPassword"
             android:maxLength="20"
@@ -59,18 +61,19 @@
             android:id="@+id/btn_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-           android:layout_marginTop="20dp"
-            android:minWidth="52dp"
+            android:layout_marginTop="@dimen/btn_login_laymartop"
+            android:minWidth="@dimen/btn_login_minwidth"
             android:textSize="25sp"
-            android:paddingStart="52dp"
-            android:textColor="#fff"
-            android:paddingEnd="52dp"
+            android:paddingStart="@dimen/btn_login_padStart"
+            android:textColor="#000"
+            android:paddingEnd="@dimen/btn_login_padEnd"
             android:textStyle="bold"
             android:background="@drawable/ic_rectanglebox"
             android:layout_gravity="center"
             android:text="@string/btn_login"
             android:onClick="onClick"
-            />
+            android:paddingRight="@dimen/btn_login_padRight"
+            android:paddingLeft="@dimen/btn_login_padLeft" />
 
     </LinearLayout>
 

@@ -16,10 +16,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LoginActivity"
-            android:windowSoftInputMode="adjustResize"
-         />
+        <activity android:name=".LoginActivity">
+
+        </activity>
+
         <activity android:name=".ItemListActivity"/>
+    <!--<activity android:name=".ActivityItemCalculator"/>-->
     </application>
 
 </manifest>
