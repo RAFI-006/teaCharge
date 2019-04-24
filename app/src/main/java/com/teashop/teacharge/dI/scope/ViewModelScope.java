@@ -8,10 +8,6 @@ import androidx.lifecycle.ViewModel;
 import dagger.MapKey;
 
 
-@Documented
-@Target({ElementType.METHOD})
-@Retention(RetentionPolicy.RUNTIME)
-@MapKey
-public @interface ViewModelScope {
+public interface ViewModelScope {
     Class<? extends ViewModel> value();
 }

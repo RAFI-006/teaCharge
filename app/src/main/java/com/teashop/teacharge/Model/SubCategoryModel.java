@@ -1,55 +1,49 @@
 package com.teashop.teacharge.Model;
 
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.request.RequestOptions;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class SubCategoryModel {
-    @SerializedName("id")
+import java.io.Serializable;
+
+import androidx.databinding.BindingAdapter;
+
+import static com.teashop.teacharge.BR.imageUrl;
+
+public class SubCategoryModel implements Serializable {
+
+    @SerializedName("product_id")
     @Expose
-    private String id;
-    @SerializedName("CategoryID")
-    @Expose
-    private String categoryID;
+    private String productId;
     @SerializedName("title")
     @Expose
     private String title;
+    @SerializedName("unit_price")
+    @Expose
+    private String unitPrice;
+    @SerializedName("unit_measure")
+    @Expose
+    private String unitMeasure;
+    @SerializedName("quantity")
+    @Expose
+    private String quantity;
     @SerializedName("image")
     @Expose
     private String image;
     @SerializedName("description")
     @Expose
     private String description;
-    @SerializedName("status")
-    @Expose
-    private String status;
-    @SerializedName("createdon")
-    @Expose
-    private String createdon;
-    @SerializedName("createdby")
-    @Expose
-    private String createdby;
-    @SerializedName("updatedon")
-    @Expose
-    private String updatedon;
-    @SerializedName("updatedby")
-    @Expose
-    private String updatedby;
-    private final static long serialVersionUID = 6276967078116144784L;
+    private final static long serialVersionUID = 8903668416533126706L;
 
-    public String getId() {
-        return id;
+    public String getProductId() {
+        return productId;
     }
 
-    public void setId(String id) {
-        this.id = id;
-    }
-
-    public String getCategoryID() {
-        return categoryID;
-    }
-
-    public void setCategoryID(String categoryID) {
-        this.categoryID = categoryID;
+    public void setProductId(String productId) {
+        this.productId = productId;
     }
 
     public String getTitle() {
@@ -58,6 +52,30 @@ public class SubCategoryModel {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getUnitPrice() {
+        return unitPrice;
+    }
+
+    public void setUnitPrice(String unitPrice) {
+        this.unitPrice = unitPrice;
+    }
+
+    public String getUnitMeasure() {
+        return unitMeasure;
+    }
+
+    public void setUnitMeasure(String unitMeasure) {
+        this.unitMeasure = unitMeasure;
+    }
+
+    public String getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(String quantity) {
+        this.quantity = quantity;
     }
 
     public String getImage() {
@@ -76,44 +94,13 @@ public class SubCategoryModel {
         this.description = description;
     }
 
-    public String getStatus() {
-        return status;
-    }
 
-    public void setStatus(String status) {
-        this.status = status;
-    }
+    @BindingAdapter("subCategoryImage")
+    public static void loadImage(ImageView view, String imageUrl) {
+        Glide.with(view.getContext())
+                .load(imageUrl).apply(new RequestOptions().fitCenter())
+                .into(view);
 
-    public String getCreatedon() {
-        return createdon;
-    }
 
-    public void setCreatedon(String createdon) {
-        this.createdon = createdon;
     }
-
-    public String getCreatedby() {
-        return createdby;
-    }
-
-    public void setCreatedby(String createdby) {
-        this.createdby = createdby;
-    }
-
-    public String getUpdatedon() {
-        return updatedon;
-    }
-
-    public void setUpdatedon(String updatedon) {
-        this.updatedon = updatedon;
-    }
-
-    public String getUpdatedby() {
-        return updatedby;
-    }
-
-    public void setUpdatedby(String updatedby) {
-        this.updatedby = updatedby;
-    }
-
 }

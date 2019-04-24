@@ -8,10 +8,10 @@ public class GenericModel<TModel>{
     @SerializedName("data")
     @Expose
     private TModel data;
-    @SerializedName("error_message")
+    @SerializedName("msg")
     @Expose
     private String errorMessage;
-    @SerializedName("error_code")
+    @SerializedName("status")
     @Expose
     private String errorCode;
     private final static long serialVersionUID = -2458241920704201826L;

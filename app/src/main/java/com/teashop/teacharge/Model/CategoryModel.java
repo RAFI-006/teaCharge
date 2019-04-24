@@ -3,107 +3,65 @@ package com.teashop.teacharge.Model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class CategoryModel {
+import java.io.Serializable;
+import java.util.List;
 
-    @SerializedName("id")
+public class CategoryModel implements Serializable{
+
+    @SerializedName("category_id")
     @Expose
-    private String id;
-    @SerializedName("title")
+    private String categoryId;
+    @SerializedName("category_title")
     @Expose
-    private String title;
-    @SerializedName("image")
+    private String categoryTitle;
+    @SerializedName("category_image")
     @Expose
-    private String image;
-    @SerializedName("description")
+    private String categoryImage;
+    @SerializedName("category_description")
     @Expose
-    private String description;
-    @SerializedName("status")
+    private String categoryDescription;
+    @SerializedName("products")
     @Expose
-    private String status;
-    @SerializedName("createdon")
-    @Expose
-    private String createdon;
-    @SerializedName("createdby")
-    @Expose
-    private String createdby;
-    @SerializedName("updatedon")
-    @Expose
-    private String updatedon;
-    @SerializedName("updatedby")
-    @Expose
-    private String updatedby;
-    private final static long serialVersionUID = -567930843244472565L;
+    private List<SubCategoryModel> products = null;
+    private final static long serialVersionUID = 780034855958528384L;
 
-    public String getId() {
-        return id;
+    public String getCategoryId() {
+        return categoryId;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setCategoryId(String categoryId) {
+        this.categoryId = categoryId;
     }
 
-    public String getTitle() {
-        return title;
+    public String getCategoryTitle() {
+        return categoryTitle;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setCategoryTitle(String categoryTitle) {
+        this.categoryTitle = categoryTitle;
     }
 
-    public String getImage() {
-        return image;
+    public String getCategoryImage() {
+        return categoryImage;
     }
 
-    public void setImage(String image) {
-        this.image = image;
+    public void setCategoryImage(String categoryImage) {
+        this.categoryImage = categoryImage;
     }
 
-    public String getDescription() {
-        return description;
+    public String getCategoryDescription() {
+        return categoryDescription;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setCategoryDescription(String categoryDescription) {
+        this.categoryDescription = categoryDescription;
     }
 
-    public String getStatus() {
-        return status;
+    public List<SubCategoryModel> getProducts() {
+        return products;
     }
 
-    public void setStatus(String status) {
-        this.status = status;
+    public void setProducts(List<SubCategoryModel> products) {
+        this.products = products;
     }
-
-    public String getCreatedon() {
-        return createdon;
-    }
-
-    public void setCreatedon(String createdon) {
-        this.createdon = createdon;
-    }
-
-    public String getCreatedby() {
-        return createdby;
-    }
-
-    public void setCreatedby(String createdby) {
-        this.createdby = createdby;
-    }
-
-    public String getUpdatedon() {
-        return updatedon;
-    }
-
-    public void setUpdatedon(String updatedon) {
-        this.updatedon = updatedon;
-    }
-
-    public String getUpdatedby() {
-        return updatedby;
-    }
-
-    public void setUpdatedby(String updatedby) {
-        this.updatedby = updatedby;
-    }
-
 }

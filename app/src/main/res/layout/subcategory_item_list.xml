@@ -1,55 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout >
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.teashop.teacharge.viewModel.ProductsCategoryViewModel" />
+
+        <variable
+            name="subCategoryListener"
+            type="com.teashop.teacharge.handlers.SubCategoryClickHandler"/>
+       <variable
+           name="view"
+           type="android.view.View"/>
+       
+        <variable
+            name="position"
+            type="java.lang.Integer" />
+
+         <variable
+            name="imageUrl"
+            type="String" />
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="5dp">
+        android:padding="5dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="2dp"
+        tools:ignore="MissingConstraints">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/ic_rectanglebox_gridview"
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_rectanglebox_gridview"
+            android:orientation="horizontal"
+            android:weightSum="6">
 
-        android:orientation="vertical"
-        android:weightSum="6">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="3"
-            android:minWidth="40dp"
-            android:minHeight="40dp"
-            app:cardCornerRadius="3.3dp"
-            >
+                app:cardCornerRadius="3.3dp">
 
-            <androidx.appcompat.widget.LinearLayoutCompat
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <androidx.appcompat.widget.AppCompatImageView
-                    android:layout_width="91dp"
-                    android:layout_height="91dp"
-                    android:id="@+id/sub_category_image"
-                    android:layout_gravity="center"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/ic_bis1" />
-
-                <androidx.appcompat.widget.AppCompatTextView
-                    android:layout_width="match_parent"
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="AlmondBis"
-                    android:id="@+id/sub_category_title"
-                    android:textAlignment="center"
-                    android:textColor="#000"
-                    />
-            </androidx.appcompat.widget.LinearLayoutCompat>
-        </androidx.cardview.widget.CardView>
-    </LinearLayout>
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/sub_category_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:onClick="@{()->subCategoryListener.SubCategoryProductDetails(view,position)}"
+                        android:src="@drawable/defaultimage" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/sub_category_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@{viewModel.mSubDataList.get(position).title}"
+                        android:textAlignment="center"
+                        android:textColor="#000" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
     </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

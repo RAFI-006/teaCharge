@@ -33,18 +33,21 @@
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:orientation="vertical"
-                android:layout_weight="15"
+                android:orientation="horizontal"
 
+                android:layout_weight="15"
                 android:layout_height="match_parent">
 
-<TextView
+
+                <TextView
     android:layout_width="match_parent"
-    android:text="120.00"
+    android:id="@+id/itemPrice"
+    android:text="0"
     android:gravity="center"
     android:textStyle="bold"
     android:textSize="25dp"
     android:layout_height="match_parent" />
+
 
             </LinearLayout>
 
@@ -60,6 +63,7 @@
                 <ImageView
                     android:layout_width="30dp"
                     android:layout_height="30dp"
+                    android:id="@+id/clear_bil"
                     android:layout_marginTop="5dp"
                     android:src="@drawable/ic_clear_img"
                     />
@@ -78,6 +82,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
+                android:id="@+id/gen_bill"
                 android:background="#008000"
                 android:gravity="center"
                 android:layout_weight="5"
@@ -103,6 +108,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:orientation="vertical"
+                android:id="@+id/history"
                 android:background="#FFA500"
                 android:layout_weight="5"
                 android:gravity="center"
@@ -128,12 +134,11 @@
         <androidx.appcompat.widget.LinearLayoutCompat
                 android:id="@+id/idlistview"
                 android:layout_width="match_parent"
-
                 android:layout_height="match_parent"
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="110dp"
+                    android:layout_width="120dp"
 
                     android:layout_height="match_parent"
                     android:background="@color/colorPrimaryDark"
@@ -156,10 +161,10 @@
                 android:layout_height="match_parent">
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/horizontal_recyclerView"
-
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scrollbars="vertical" />
+                    android:scrollbars="vertical"
+                    />
 
 
             </LinearLayout>

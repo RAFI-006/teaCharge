@@ -5,10 +5,10 @@ import com.google.gson.annotations.SerializedName;
 
 public class SignInModel {
 
-    @SerializedName("username")
+    @SerializedName("email")
     @Expose
     private String username;
-    @SerializedName("passsword")
+    @SerializedName("password")
     @Expose
     private String password;
 

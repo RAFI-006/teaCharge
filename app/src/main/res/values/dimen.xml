@@ -2,6 +2,14 @@
 <resources>
     <!--ItemList-->
     <!--CommonButton-->
+
+    <!--Billing constratint-->
+
+    <dimen name="font_size_verysmall">10sp</dimen>
+    <dimen name="font_size_small">12sp</dimen>
+    <dimen name="font_size_medium">20sp</dimen>
+    <!--Billing constratint-->
+
     <dimen name="button_minHeight">55dp</dimen>
     <dimen name="button_minWidth">55dp</dimen>
     <dimen name="button_layout_marginStart">10dp</dimen>
@@ -10,6 +18,10 @@
     <dimen name="button_layout_marginLeft">2dp</dimen>
 <dimen name="lay_toplinearlayout_martop"></dimen>
     <dimen name="backspace_lay_marstart">50dp</dimen>
+    <dimen name="popup_width">500dp</dimen>
+    <dimen name="popup_height">300dp</dimen>
+
+
     <dimen name="backspace_lay_marleft">50dp</dimen>
 
     <dimen name="numbersLinLay_marStart">40dp</dimen>

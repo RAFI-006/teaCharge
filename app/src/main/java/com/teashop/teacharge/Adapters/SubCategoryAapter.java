@@ -43,7 +43,6 @@ public class SubCategoryAapter extends RecyclerView.Adapter<SubCategoryAapter.Li
 
         listHolder.recyclerView.setHasFixedSize(true);
       listHolder.recyclerView.setLayoutManager((new LinearLayoutManager(ctx, LinearLayoutManager.HORIZONTAL, false)));
-        listHolder.recyclerView.setAdapter(new SubCategoryHorizontalAdapter(list,ctx));
 
     }
 

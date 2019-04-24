@@ -9,8 +9,8 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class BaseApi {
 
     private static Retrofit retrofit=null;
-    public static final String BASE_URL ="http://babusofttech.in/teacharge/";
-
+    //public static final String BASE_URL ="http://babusofttech.in/teacharge/";
+    public static final String BASE_URL="http://10.0.3.2/teacharge/api/";
 
 
     public static Retrofit getClient() {
