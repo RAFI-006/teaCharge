@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+    </data>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".View.TransactionHistory">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:id="@+id/top"
+    android:background="@color/colorPrimary"
+    android:layout_height="60dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order History"
+        android:textColor="#fff"
+        android:textSize="25dp"
+
+        />
+</LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_below="@+id/top"
+        android:id="@+id/transaction_recycler_View"
+        android:layout_height="match_parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|left"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/calendar_teacharge" />
+
+
+
+</RelativeLayout>
+
+</layout>
