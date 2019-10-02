@@ -6,3 +6,4 @@ A reatraunt app with an complete Example of
 5.Dependency Injection
 6.Complete Data Binding
 7.Rest Services
+8.AndroidX
