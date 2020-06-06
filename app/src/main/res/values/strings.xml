@@ -1,37 +1,3 @@
 <resources>
     <string name="app_name">TeaCharge</string>
-    <!--SignUp-->
-    <string name="tool_login">LOGIN</string>
-    <string name="edt_Name">UserName</string>
-    <string name="edt_Pwd">Password</string>
-    <string name="btn_login">LOGIN</string>
-    <string name="contentdesc">null</string>
-    <string name="textrs">₹ 0.00</string>
-
-    <!---IteamListCalculate-->
-    <string name="button1">1</string>
-    <string name="button2">2</string>
-    <string name="button3">3</string>
-    <string name="button4">4</string>
-    <string name="button5">5</string>
-    <string name="button6">6</string>
-    <string name="button7">7</string>
-    <string name="button8">8</string>
-    <string name="button9">9</string>
-    <string name="button0">0</string>
-    <string name="enter">1</string>
-    <string name="buttonDot">.</string>
-    <string name="tvdisplayNumber">EnterQuantity</string>
-    <string name="tvmsg_unitprice">*Unit Price is Exclusive of Taxes</string>
-    <string name="tvItemName">Almond Biscut</string>
-    <string name="tvUnitPrice">unit Price:₹500.00</string>
-    <string name="tvQuantityMode">QuantityMode</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_generate_bill">GenerateBill</string>
-    <string name="title_activity_main2">Main2Activity</string>
-    <string name="title_activity_transaction_history">TransactionHistory</string>
-    <string name="title_activity_demo">Demo</string>
-
 </resources>
