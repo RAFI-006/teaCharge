@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable
+            name="viewModel"
+            type="com.teashop.teacharge.viewModel.ProductDescriptionViewModel" />
+
+        <variable
+            name="position"
+            type="java.lang.Integer" />
+
+
+        <variable
+            name="presenter"
+            type="com.teashop.teacharge.handlers.ItemCountUpdatePrice" />
+
+        <variable
+            name="imageUrl"
+            type="String" />
+
+
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/godLayout"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:id="@+id/layCardview"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:minWidth="@dimen/layCardview_minWidth"
+                            android:minHeight="@dimen/layCardview_minHeight"
+                            android:layout_marginStart="@dimen/layCardview_lay_marginStart"
+                            android:layout_marginEnd="@dimen/layCardview_lay_marginEnd"
+                            android:layout_marginTop="@dimen/layCardview_lay_marginTop"
+                            android:layout_marginLeft="@dimen/layCardview_lay_marginLeft"
+                            android:layout_marginRight="@dimen/layCardview_lay_marginRight"
+                            android:orientation="vertical"
+                            android:weightSum="6"
+                            >
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/imgCradview"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="3"
+                                android:minWidth="@dimen/imgCradview_minwidth"
+                                android:minHeight="@dimen/imgCradview_minHeight"
+                                app:cardCornerRadius="@dimen/imgCradview_cardCornerRadius">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/imgName"
+                                    android:layout_width="@dimen/imgName_layWidth"
+                                    android:layout_height="@dimen/imgName_layHeight"
+                                    android:layout_gravity="center"
+                                    app:profileImage="@{imageUrl}"
+                                    android:scaleType="fitXY"
+                                    android:src="@drawable/ic_bis1" />
+
+                            </androidx.cardview.widget.CardView>
+<View
+    android:layout_width="0dp"
+    android:layout_height="5dp"/>
+                            <TextView
+                                android:id="@+id/tvItemName"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:textColor="#000"
+
+                                android:gravity="center"
+                                android:text="price"
+                                android:textStyle="bold"
+                                android:background="@drawable/textboxvorder"
+                                android:textSize="18sp"
+                                android:layout_weight="1"
+                                 />
+
+
+                        </LinearLayout>
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/displayLinearLayout"
+                        android:layout_width="match_parent"
+
+
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="30dp" />
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:id="@+id/lay_toplinearlayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="#fff"
+                            android:orientation="vertical">
+
+
+                            <EditText
+                                android:id="@+id/tvdisplayNumber"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+
+                                android:layout_gravity="center"
+                                android:hint="1"
+                                android:textStyle="bold"
+                                android:background="@android:color/transparent"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:textColor="#000"
+                                android:textColorHint="#000"
+                                android:textSize="20sp" />
+
+
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                        <!--</HorizontalScrollView>-->
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/numbersLinearLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/numbersLinLay_marStart"
+                        android:layout_marginEnd="@dimen/numbersLinLay_marEnd"
+                        android:layout_marginBottom="@dimen/numbersLinLay_marBottom"
+                        android:layout_marginTop="@dimen/numbersLinLay_marTop"
+                        android:orientation="vertical"
+                        android:layout_marginRight="@dimen/numbersLinLay_marRight"
+                        android:layout_marginLeft="@dimen/numbersLinLay_marRight">
+
+                        <LinearLayout
+                            android:id="@+id/secondLine"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <ImageButton
+                                android:id="@+id/buttonenter"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_weight="1"
+                                android:minHeight="55dp"
+                                android:minWidth="55dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="5dp"
+                                android:background="@color/colorPrimaryDark"
+                                android:src="@drawable/ic_enter_image"
+                                android:textColor="#FFFFFF"
+                                android:textSize="25sp"
+                                android:onClick="@{() -> presenter.ItemCountUpdatePrice()}"
+                                android:layout_marginLeft="2dp"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvmsg_unitprice"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tvmsg_unitprice"
+                            android:textColor="#FF8C00"
+                            android:textAlignment="center"
+                            />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

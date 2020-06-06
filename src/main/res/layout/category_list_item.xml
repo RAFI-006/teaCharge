@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+
+<variable
+    name="viewModel"
+    type="com.teashop.teacharge.viewModel.ProductsCategoryViewModel" />
+
+        <variable
+            name="click_listener"
+            type="android.view.View.OnClickListener"/>
+        <variable
+    name="position"
+    type="java.lang.Integer" />
+
+        <variable name="itemClickListener"
+            type="com.teashop.teacharge.handlers.CategoryClickHandler"/>
+
+    </data>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textparcel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:onClick="@{() -> itemClickListener.CategoryClcikEvent(position)}"
+        android:text="@{viewModel.mDataList.get(position).categoryTitle}"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
+</layout>
