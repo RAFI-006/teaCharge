@@ -6,72 +6,39 @@ import com.google.gson.annotations.SerializedName;
 public class LoginResponse {
 
 
-    @SerializedName("userid")
+    @SerializedName("msg")
     @Expose
-    private String userid;
-    @SerializedName("name")
+    private String msg;
+    @SerializedName("status")
     @Expose
-    private String name;
-    @SerializedName("mobileno")
+    private Integer status;
+    @SerializedName("data")
     @Expose
-    private String mobileno;
-    @SerializedName("emailid")
-    @Expose
-    private String emailid;
-    @SerializedName("address")
-    @Expose
-    private String address;
-    @SerializedName("admin_type")
-    @Expose
-    private String adminType;
-    private final static long serialVersionUID = -2844186069239330941L;
+    private Data data;
 
-    public String getUserid() {
-        return userid;
+    public String getMsg() {
+        return msg;
     }
 
-    public void setUserid(String userid) {
-        this.userid = userid;
+    public void setMsg(String msg) {
+        this.msg = msg;
     }
 
-    public String getName() {
-        return name;
+    public Integer getStatus() {
+        return status;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setStatus(Integer status) {
+        this.status = status;
     }
 
-    public String getMobileno() {
-        return mobileno;
+    public Data getData() {
+        return data;
     }
 
-    public void setMobileno(String mobileno) {
-        this.mobileno = mobileno;
-    }
-
-    public String getEmailid() {
-        return emailid;
-    }
-
-    public void setEmailid(String emailid) {
-        this.emailid = emailid;
-    }
-
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getAdminType() {
-        return adminType;
-    }
-
-    public void setAdminType(String adminType) {
-        this.adminType = adminType;
+    public void setData(Data data) {
+        this.data = data;
     }
 
 }
+

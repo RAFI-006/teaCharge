@@ -1,15 +1,15 @@
 package com.teashop.teacharge.Model;
 
-import android.widget.ImageView;
+import androidx.appcompat.widget.AppCompatImageView;
+import androidx.databinding.BindingAdapter;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
+import com.teashop.teacharge.R;
 
 import java.io.Serializable;
-
-import androidx.databinding.BindingAdapter;
 
 public class ProductDescriptionModel implements Serializable {
     @SerializedName("id")
@@ -169,9 +169,10 @@ public class ProductDescriptionModel implements Serializable {
     }
 
     @BindingAdapter("profileImage")
-    public static void loadImage(ImageView view, String imageUrl) {
+    public static void loadImage(AppCompatImageView view, String imageUrl) {
         Glide.with(view.getContext())
-                .load(imageUrl).apply(new RequestOptions().fitCenter())
+                .load("https://api.androidhive.info/images/glide/large/bvs.png")
+                .apply(RequestOptions.placeholderOf(R.drawable.ic_bis1).error(R.drawable.defaultimage).fitCenter())
                 .into(view);
     }
 

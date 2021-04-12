@@ -1,6 +1,7 @@
 package com.teashop.teacharge.Fragment;
 
 import android.app.DatePickerDialog;
+import android.app.DialogFragment;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.provider.CalendarContract;
@@ -25,9 +26,9 @@ import java.util.Date;
 import androidx.annotation.Nullable;
 import androidx.core.content.ContextCompat;
 import androidx.databinding.DataBindingUtil;
-import androidx.fragment.app.DialogFragment;
 
-public class SelectDateDialogFragment extends DialogFragment  {
+
+public class SelectDateDialogFragment extends androidx.fragment.app.DialogFragment {
 
     SelectDateDialogFragmentBinding binding;
     public static SelectDateDialogFragment newInstance() {

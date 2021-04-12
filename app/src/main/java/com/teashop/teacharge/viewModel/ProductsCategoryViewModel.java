@@ -32,8 +32,10 @@ import androidx.lifecycle.ViewModel;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
+import retrofit2.http.Headers;
 
-public class ProductsCategoryViewModel extends ViewModel implements View.OnClickListener,CategoryClickHandler,SubCategoryClickHandler {
+public class
+ProductsCategoryViewModel extends ViewModel implements View.OnClickListener,CategoryClickHandler,SubCategoryClickHandler {
     public ProductCategoryAdapter mAdapter;
     public  SubCategoryHorizontalAdapter mSubCategoryAdaper;
     public List<CategoryModel> mDataList;

@@ -9,7 +9,7 @@ import java.util.List;
 public class PostTransactionHistoryModel implements Serializable {
     @SerializedName("bill_id")
     @Expose
-    private Integer billId;
+    private String billId;
     @SerializedName("total_quantity")
     @Expose
     private Integer totalQuantity;
@@ -27,11 +27,11 @@ public class PostTransactionHistoryModel implements Serializable {
     private List<OrderItemParams> orderitems = null;
     private final static long serialVersionUID = 9000063577643327591L;
 
-    public Integer getBillId() {
+    public String getBillId() {
         return billId;
     }
 
-    public void setBillId(Integer billId) {
+    public void setBillId(String billId) {
         this.billId = billId;
     }
 

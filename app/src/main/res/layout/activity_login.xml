@@ -1,94 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
 
     <data>
 
     </data>
 
 
-<androidx.appcompat.widget.LinearLayoutCompat
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#DAA520"
-    >
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/top_LinearLay"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="@dimen/top_LinearLay_marTop"
-        android:gravity="center"
-       >
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@+id/imgTea"
-            android:layout_width="@dimen/imgTea_layWidth"
-            android:layout_height="@dimen/imgTea_layHeight"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/top_LinearLay"
+            android:layout_alignParentTop="true"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/imgTea_marTop"
-            android:src="@drawable/ic_login_primg"
-            />
-
-        <androidx.appcompat.widget.AppCompatEditText
-
-            android:id="@+id/edt_Name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#000"
-            android:textStyle="bold"
-            android:textColorHint="#000"
-            android:background="@drawable/ic_rectanglebox"
-            android:singleLine="true"
-            android:hint="@string/edt_Name"
-            android:textAlignment="center"
-            android:layout_margin="@dimen/edt_Pwd_layMargin"
-            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_login_primg" />
 
 
-            />
-
-
-
-        <androidx.appcompat.widget.AppCompatEditText
-
-            android:id="@+id/edt_Pwd"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="#000"
-            android:textStyle="bold"
-            android:textColorHint="#000"
-            android:background="@drawable/ic_rectanglebox"
-            android:hint="@string/edt_Pwd"
-            android:textAlignment="center"
-            android:layout_margin="@dimen/edt_Pwd_layMargin"
-            android:inputType="textPassword"
-            android:textSize="20sp"
-            android:maxLength="20"
-
-            />
-
-
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/btn_login"
+        <ProgressBar
+            android:id="@+id/p_bar"
+            android:layout_below="@id/imgTea"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/btn_login_laymartop"
-            android:minWidth="@dimen/btn_login_minwidth"
-            android:textSize="25sp"
-            android:paddingStart="@dimen/btn_login_padStart"
-            android:textColor="#000"
-            android:paddingEnd="@dimen/btn_login_padEnd"
-            android:textStyle="bold"
-            android:background="@drawable/ic_rectanglebox"
-            android:layout_gravity="center"
-            android:text="@string/btn_login"
-            android:paddingRight="@dimen/btn_login_padRight"
-            android:paddingLeft="@dimen/btn_login_padLeft" />
+            android:visibility="gone"
+            android:indeterminateTint="@color/colorPrimaryDark"
+            android:layout_centerInParent="true"/>
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/top_LinearLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="@dimen/top_LinearLay_marTop"
+            android:layout_marginBottom="@dimen/top_LinearLay_marTop"
+            android:gravity="center"
+            android:orientation="vertical">
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
+            <androidx.appcompat.widget.AppCompatEditText
+
+                android:id="@+id/edt_Name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/edt_Pwd_layMargin"
+                android:background="@drawable/ic_rectanglebox"
+                android:hint="@string/edt_Name"
+                android:singleLine="true"
+
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edt_Pwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/edt_Pwd_layMargin"
+                android:background="@drawable/ic_rectanglebox"
+                android:hint="@string/edt_Pwd"
+                android:inputType="textPassword"
+                android:maxLength="20"
+
+                android:enabled="true"
+
+                android:textAlignment="center"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/btn_login_laymartop"
+                android:background="@drawable/ic_rectanglebox"
+                android:minWidth="@dimen/btn_login_minwidth"
+                android:padding="10dp"
+                android:text="@string/btn_login"
+                android:textColor="#000"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
 </layout>

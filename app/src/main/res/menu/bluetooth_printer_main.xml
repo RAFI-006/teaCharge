@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.loopedlabs.btprinttester.BluetoothPrinterMain" >
+
+    <item
+        android:id="@+id/action_clear_device"
+        android:orderInCategory="100"
+        android:title="@string/action_clear_device"
+        app:showAsAction="never"/>
+
+        <item
+        android:id="@+id/action_connect_device"
+        android:orderInCategory="99"
+        android:title="@string/action_connect_device"
+        app:showAsAction="never"/>
+        
+        <item
+        android:id="@+id/action_unpair_device"
+        android:orderInCategory="200"
+        android:title="@string/action_unpair_device"
+        app:showAsAction="never"/>
+</menu>

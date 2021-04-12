@@ -17,6 +17,7 @@ import com.teashop.teacharge.Model.OrderItem;
 import com.teashop.teacharge.R;
 import com.teashop.teacharge.View.TransactionHistory;
 import com.teashop.teacharge.databinding.TransactionHistoryItemlistBinding;
+import com.teashop.teacharge.prefs.PrefSetting;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -29,12 +30,14 @@ public class TransactionHistoryAdapter extends RecyclerView.Adapter<TransactionH
     int textSize; int smallTextSize; int mediumTextSize;Context ctx;
     List<GetTransactionHistoryModel> historyList;
     List<OrderItem> items=new ArrayList<>();
-
+    PrefSetting pfs;
     public TransactionHistoryAdapter(int textSize, int smallTextSize, int mediumTextSize, Context ctx) {
 this.textSize=textSize;
 this.smallTextSize=smallTextSize;
 this.mediumTextSize=mediumTextSize;
 this.ctx=ctx;
+
+ pfs = new PrefSetting(ctx);
 
     }
 
@@ -60,6 +63,7 @@ this.ctx=ctx;
         holder.mbinding.saleDate.setText(historyList.get(position).getSaleDate());
         holder.mbinding.totalPrice.setText(historyList.get(position).getTotalPrice());
         holder.mbinding.totalQuantity.setText(historyList.get(position).getTotalQuantity());
+        holder.mbinding.userCode.setText(pfs.GetUserCode());
         items = historyList.get(position).getOrderItems();
         LoadProducts(items,holder.mbinding,textSize,smallTextSize,mediumTextSize,ctx);
 

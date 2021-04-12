@@ -5,22 +5,22 @@ import android.content.Context;
 import android.text.Layout;
 import android.widget.Toast;
 
-import com.ngx.tp300x_sdk.NGXPOSPrinter;
+import com.ngx.BluetoothPrinter;
+import com.ngx.BtpCommands;
 import com.teashop.teacharge.Model.BillingModel;
-import com.teashop.teacharge.View.GenerateBill;
+import com.teashop.teacharge.View.BluetoothPrinterMain;
 
 import java.util.Calendar;
 import java.util.List;
 import java.util.TimeZone;
 
 public class GenerateBillViewModel {
-
-    String total;
-    NGXPOSPrinter ngxposPrinter = NGXPOSPrinter.getInstance();
+    private BluetoothPrinter mBtp = BluetoothPrinterMain.mBtp;
+    Integer total;
     List<BillingModel> mbillingList;
     Context ctx;
 
-    public GenerateBillViewModel(List<BillingModel> billingList,String total,Context ctx) {
+    public GenerateBillViewModel(List<BillingModel> billingList,Integer total,Context ctx) {
 
          mbillingList=billingList;
          this.total=total;
@@ -40,9 +40,29 @@ public class GenerateBillViewModel {
 String date=String.valueOf(currentDay)+"/"+String.valueOf(currentMonth)+"/"+String.valueOf(currentYear);
 
         try {
+            mBtp.setPrintFontStyle(BtpCommands.FONT_STYLE_REGULAR);
+            mBtp.setPrintFontSize(BtpCommands.FONT_SIZE_NORMAL);
+            mBtp.printText("          Cash Bill             ");
+            mBtp.printLineFeed();
+            mBtp.printTextLine("----------------------------------");
+            mBtp.printTextLine("Items     Qty     Rate      Amt");
+            mBtp.printTextLine("-------------------------------");
+            mBtp.printTextLine("Reynolds Pen     2     10    20");
+            mBtp.printTextLine("Natraj Pen       2     10    20");
+            mBtp.printTextLine("Next Item        20    5    100");
+            mBtp.printLineFeed();
+            mBtp.printTextLine("-------------------------------");
+            mBtp.printTextLine("Tot Items: 2      Amount: 66.50");
+            mBtp.printTextLine("               ----------------");
+            mBtp.printTextLine("                 Net Amt: 70.00");
+            mBtp.printLineFeed();
+            mBtp.printTextLine("      Thank you ! Visit Again");
+            mBtp.printLineFeed();
+            mBtp.printTextLine("*******************************");
+            mBtp.printLineFeed();
 
 
-            ngxposPrinter.resetAll();
+           /* ngxposPrinter.resetAll();
             ngxposPrinter.setAlign(Layout.Alignment.ALIGN_CENTER);
             ngxposPrinter.setBoldStyle();
             ngxposPrinter.printText("Tea Charge\n\n");
@@ -58,15 +78,15 @@ String date=String.valueOf(currentDay)+"/"+String.valueOf(currentMonth)+"/"+Stri
             ngxposPrinter.setHorizontalTabPosition((byte) 20, (byte) 33, (byte) 40);
             ngxposPrinter.printText("ITEM\tPRICE \tQTY\tTOTAL\n");
             ngxposPrinter.setUnBoldStyle();
-            StringBuilder str = new StringBuilder("------------------------------------------------\n");
+            StringBuilder str = new StringBuilder("------------------------------------------------\n");*/
 
-    for(int i=0;i<mbillingList.size();i++)
+ /*   for(int i=0;i<mbillingList.size();i++)
     {
         str.append(mbillingList.get(i).getProduct()+"\t"+mbillingList.get(i).getPrice()+
                   "\t"+mbillingList.get(i).getQuantity()+"\t"+mbillingList.get(i).getTotal());
-    }
+    }*/
 
-    str.append("----------------------------------------------\n");
+   /* str.append("----------------------------------------------\n");
 
             ngxposPrinter.setHorizontalTabPosition((byte) 25, (byte) 40);
             //// ngxposPrinter.setBoldStyle();
@@ -78,7 +98,7 @@ String date=String.valueOf(currentDay)+"/"+String.valueOf(currentMonth)+"/"+Stri
             ngxposPrinter.setDoubleWidth();
             ngxposPrinter.setHorizontalTabPosition((byte) 5, (byte) 18);
             ngxposPrinter.printText("Thank You Visit Again");
-            ngxposPrinter.paperFeedAndCut(mbillingList.size()+2);
+            ngxposPrinter.paperFeedAndCut(mbillingList.size()+2);*/
 
         } catch (Exception e) {
             e.printStackTrace();

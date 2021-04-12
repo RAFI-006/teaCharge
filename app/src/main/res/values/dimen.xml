@@ -57,7 +57,7 @@
 
     <!--Login-->
 
-    <dimen name="top_LinearLay_marTop">60dp</dimen>
+    <dimen name="top_LinearLay_marTop">40dp</dimen>
     <dimen name="imgTea_layWidth">150dp</dimen>
     <dimen name="imgTea_layHeight">100dp</dimen>
     <dimen name="imgTea_marTop">50dp</dimen>

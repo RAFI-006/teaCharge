@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TeaCharge</string>
+    <string name="app_name">Chai Boy</string>
     <!--SignUp-->
     <string name="tool_login">LOGIN</string>
     <string name="edt_Name">UserName</string>
@@ -33,5 +33,10 @@
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_transaction_history">TransactionHistory</string>
     <string name="title_activity_demo">Demo</string>
+
+    <string name="action_clear_device">Clear device</string>
+    <string name="action_connect_device">Connect Device</string>
+    <string name="action_unpair_device">Unpair Device</string>
+    <string name="todo">TODO</string>
 
 </resources>

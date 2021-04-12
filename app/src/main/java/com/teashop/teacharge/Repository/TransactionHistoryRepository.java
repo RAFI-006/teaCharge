@@ -44,7 +44,6 @@ public class TransactionHistoryRepository {
               Log.d("dorami", "Productdescription: "+productDescriptionList);
               mHistory.setValue(productDescriptionList);
 
-
           }
 
           @Override

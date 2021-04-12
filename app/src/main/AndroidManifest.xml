@@ -1,46 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.teashop.teacharge">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.android.example.USB_PERMISSION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_login_primg"
+        android:icon="@drawable/launch_icon"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".View.LaunchScreenActivity">
+        android:theme="@style/AppTheme"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".View.LaunchScreenActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".View.LoginActivity" />
+        <activity android:name=".View.LoginActivity"
+            android:screenOrientation="portrait"/>
         />
-        <activity android:name=".View.ProductsCategory" />
-        <activity android:name=".View.ItemListActivity" />
-        <activity android:name=".View.ProductsDescription" />
+        <activity android:name=".View.ProductsCategory"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".View.ItemListActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".View.ProductsDescription"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".View.GenerateBill"
             android:label="@string/title_activity_generate_bill"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".Main2Activity"
             android:label="@string/title_activity_main2"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".View.TransactionHistory"
             android:label="@string/title_activity_transaction_history"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
             android:name=".Demo"
             android:label="@string/title_activity_demo"
+            android:theme="@style/AppTheme"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".View.BluetoothPrinterMain"
+            android:screenOrientation="portrait"
             android:theme="@style/AppTheme"></activity>
     </application>
 

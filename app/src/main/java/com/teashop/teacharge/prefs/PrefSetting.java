@@ -9,6 +9,8 @@ public class PrefSetting {
     private SharedPreferences sharedPrefs;
     private static String PREFERENCE_ACCESS_KEY = "INDICAL";
     private static String BILL__KEY = "BILLID";
+    private static String USER__CODE = "USERCODE";
+
 
     private SharedPreferences.Editor prefEditor;
     public PrefSetting(Context ctx)
@@ -24,9 +26,19 @@ public class PrefSetting {
         prefEditor.commit();
     }
 
+    public void SaveUserCode(String userCode)
+    {
+        prefEditor.putString(USER__CODE,userCode);
+        prefEditor.commit();
+    }
     public  int GetBillId()
     {
         return sharedPrefs.getInt(BILL__KEY,0);
+    }
+
+    public  String GetUserCode()
+    {
+        return sharedPrefs.getString(USER__CODE,"default");
     }
 
 

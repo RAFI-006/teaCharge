@@ -1,141 +1,175 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android">
-    <data>
-    </data>
+
+    <data></data>
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="wrap_content"
-    android:id="@+id/transaction_card_view"
-    android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
-   <LinearLayout
-       android:layout_width="wrap_content"
-       android:orientation="vertical"
-       android:layout_height="wrap_content">
-       <RelativeLayout
-           android:layout_width="wrap_content"
-           android:layout_margin="15sp"
-           android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/transaction_card_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_rectanglebox"
+            android:orientation="vertical">
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:textSize="20sp"
-               android:textColor="#000"
-               android:textStyle="bold"
-               android:text="Bill ID:-"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:id="@+id/bill_id"
-               android:layout_height="wrap_content"
-               android:textSize="20sp"
-               android:textColor="#000"
-               android:layout_alignParentRight="true"
+                android:orientation="vertical">
 
-               android:text="10001"
-               android:layout_alignParentEnd="true" />
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp">
 
-       </RelativeLayout>
-       <RelativeLayout
-           android:layout_width="wrap_content"
-           android:layout_margin="15sp"
-           android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Bill ID:-"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:textSize="20sp"
-               android:textColor="#000"
-               android:textStyle="bold"
-               android:text="Total Price:-"/>
+                    <TextView
+                        android:id="@+id/bill_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:text="10001"
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:id="@+id/total_price"
-               android:layout_height="wrap_content"
-               android:textSize="20sp"
-               android:textColor="#000"
-               android:layout_alignParentRight="true"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
 
-               android:text="5"
-               android:layout_alignParentEnd="true" />
+                </RelativeLayout>
 
-       </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp">
 
-       <RelativeLayout
-           android:layout_width="wrap_content"
-           android:layout_margin="15sp"
-           android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Price:-"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:textSize="20sp"
-               android:textColor="#000"
-               android:textStyle="bold"
-               android:text="Total Quantity:-"/>
+                    <TextView
+                        android:id="@+id/total_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:text="5"
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:id="@+id/total_quantity"
-               android:layout_height="wrap_content"
-               android:textSize="20sp"
-               android:textColor="#000"
-               android:layout_alignParentRight="true"
+                        android:textColor="#000"
+                        android:textSize="20sp" />
 
-               android:text="6"
-               android:layout_alignParentEnd="true" />
+                </RelativeLayout>
 
-       </RelativeLayout>
-       <RelativeLayout
-           android:layout_width="wrap_content"
-           android:layout_margin="15sp"
-           android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp">
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:layout_height="wrap_content"
-               android:textSize="20sp"
-               android:textColor="#000"
-               android:textStyle="bold"
-               android:text="Sale Date:-"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Quantity:-"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
 
-           <TextView
-               android:layout_width="wrap_content"
-               android:id="@+id/sale_date"
-               android:layout_height="wrap_content"
-               android:textSize="20sp"
-               android:textColor="#000"
-               android:layout_alignParentRight="true"
+                    <TextView
+                        android:id="@+id/total_quantity"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:text="6"
 
-               android:text="2019-04-25"
-               android:layout_alignParentEnd="true" />
+                        android:textColor="#000"
+                        android:textSize="20sp" />
 
-       </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sale Date:-"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sale_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:text="2019-04-25"
+
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15sp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="User Code"
+                        android:textColor="#000"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/user_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:text="2019-04-25"
+
+                        android:textColor="#000"
+                        android:textSize="20sp" />
+
+                </RelativeLayout>
 
 
+            </LinearLayout>
 
-   </LinearLayout>
-
-</androidx.cardview.widget.CardView>
+        </androidx.cardview.widget.CardView>
 
         <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/tablelayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:stretchColumns="*"
-            android:id="@+id/tablelayout"
-           >
+            android:layout_marginBottom="5dp"
+            android:background="@android:color/white"
+            android:stretchColumns="*">
             <!-- remove stretchColumns -->
 
         </TableLayout>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="2dp"
-            android:background="#000"/>
+            android:background="#000" />
 
 
     </LinearLayout>

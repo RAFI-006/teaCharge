@@ -1,49 +1,108 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout>
+
     <data>
 
     </data>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="match_parent"
-    tools:context=".View.TransactionHistory">
 
-<LinearLayout
-    android:layout_width="match_parent"
-    android:gravity="center"
-    android:id="@+id/top"
-    android:background="@color/colorPrimary"
-    android:layout_height="60dp">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Order History"
-        android:textColor="#fff"
-        android:textSize="25dp"
-
-        />
-</LinearLayout>
-
-    <androidx.recyclerview.widget.RecyclerView
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_below="@+id/top"
-        android:id="@+id/transaction_recycler_View"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+        tools:context=".View.TransactionHistory">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_height="wrap_content"
-        android:gravity="bottom|left"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@drawable/calendar_teacharge" />
+        <ProgressBar
+            android:id="@+id/p_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:indeterminateTint="@color/colorPrimaryDark"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order History"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25dp"
+
+                />
+        </LinearLayout>
 
 
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/transaction_recycler_View"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/top"
+            android:visibility="visible"
+            tools:listitem="@layout/transaction_history_itemlist" />
 
-</RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_nodata"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone"
+            android:text="No Data"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="25dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:backgroundTint="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/ic_calendar" />
+
+        <LinearLayout
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Total: "
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25dp" />
+
+            <TextView
+                android:id="@+id/tv_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="0.0"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="25dp"
+
+                />
+        </LinearLayout>
+
+
+    </RelativeLayout>
 
 </layout>
